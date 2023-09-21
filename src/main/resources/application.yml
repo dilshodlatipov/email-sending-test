@@ -1,0 +1,11 @@
+spring:
+  mail:
+    host: your host
+    port: 8080
+    username: your username
+    password: your password
+    properties:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
