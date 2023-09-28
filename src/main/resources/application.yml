@@ -1,11 +1,19 @@
 spring:
   mail:
-    host: your host
-    port: 8080
-    username: your username
-    password: your password
+    host: your smtp hostname
+    port: 0000
+    username: your smtp username
+    password: your smtp password
     properties:
       smtp:
         auth: true
         starttls:
           enable: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: come on
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
